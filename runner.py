@@ -19,6 +19,10 @@ moveFont = pygame.font.Font("OpenSans-Regular.ttf", 60)
 
 user = None
 board = ttt.initial_state()
+print("Before minimax")
+print(ttt.minimax(board))
+print("After minimax")
+
 ai_turn = False
 
 while True:
