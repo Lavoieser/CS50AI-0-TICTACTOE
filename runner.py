@@ -149,3 +149,4 @@ while running:
                     ai_turn = False
 
     pygame.display.flip()
+pygame.quit()
