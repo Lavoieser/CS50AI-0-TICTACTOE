@@ -29,8 +29,8 @@ while running:
    #     if event.type == pygame.QUIT:
    #         sys.exit()
     for event in pygame.event.get():
-    if event.type == pygame.QUIT:
-        running = False
+        if event.type == pygame.QUIT:
+            running = False
 
     screen.fill(black)
 
