@@ -21,16 +21,12 @@ user = None
 board = ttt.initial_state()
 ai_turn = False
 
-running = True
-#while True:
-while running:
 
-   # for event in pygame.event.get():
-   #     if event.type == pygame.QUIT:
-   #         sys.exit()
-    for event in pygame.event.get():
+while True:
+
+   for event in pygame.event.get():
         if event.type == pygame.QUIT:
-            running = False
+            sys.exit()
 
     screen.fill(black)
 
@@ -149,4 +145,4 @@ while running:
                     ai_turn = False
 
     pygame.display.flip()
-pygame.quit()
+
